@@ -13,7 +13,7 @@ func main() {
 	res := lib.GetNacosUrl(*url)
 	switch *method {
 	case "":
-		fmt.Println("请使用 -m 参数指定方法\n-m getuser 获取用户名密码\n-m adduser 添加用户\n-m getconfig 获取配置文件列表")
+		fmt.Println("请使用 -m 参数指定方法\n-m getuser 获取用户名密码\n-m adduser 添加用户")
 	case "getuser":
 		lib.GetNacosUser(res)
 	case "adduser":
