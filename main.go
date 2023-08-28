@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	url := flag.String("u", "http://127.0.0.1:8848", "使用 -u 指定URL")
+	url := flag.String("u", "", "使用 -u 指定URL")
 	method := flag.String("m", "", "使用 -m 指定方法")
 	flag.Parse()
 	urls := lib.FormatURL(*url)
